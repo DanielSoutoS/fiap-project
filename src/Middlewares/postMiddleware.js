@@ -10,7 +10,7 @@ module.exports.createPost = async (req, res, next) => {
   if (title.length > 100 || body.length > 1000) {
     return res.status(400).json({
       message:
-        "O titulo e o corpo devem ter no maximo 100 e 1000 caracteres respectivamente",
+        "O titulo e o corpo devem ter no máximo 100 e 1000 caracteres respectivamente",
     });
   }
   next();
